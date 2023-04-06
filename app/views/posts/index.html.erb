@@ -1,13 +1,47 @@
-<div id="posts"></div>
+<div id="posts">
+  <h2>Hii</h2>
+  <p id="notice"><%= notice %></p>
 
-<script type="text/javascript">
+  <h1>Posts</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.title %></td>
+          <td><%= post.content %></td>
+          <td><%= link_to 'Show', post %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Post', new_post_path %>
+</div>
+<!-- <script type="text/javascript">
+  var Blog = Blog || {};
+
+  Blog.Routers = {
+    PostsRouter: Backbone.Router.extend({
+      // define the PostsRouter here
+    })
+  };
   $(function() {
     // Blog is the app name
     window.router = new Blog.Routers.PostsRouter({posts: <%= @posts.to_json.html_safe -%>});
     Backbone.history.start();
   });
-</script>
+</script -->>
 
-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
-
-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

@@ -1,5 +1,6 @@
 class Blog.Routers.PostsRouter extends Backbone.Router
   initialize: (options) ->
+    console.log('route')
     @posts = new Blog.Collections.PostsCollection()
     @posts.reset options.posts
 
@@ -15,6 +16,7 @@ class Blog.Routers.PostsRouter extends Backbone.Router
     $("#posts").html(@view.render().el)
 
   index: ->
+    alert 'Home'
     @view = new Blog.Views.Posts.IndexView(collection: @posts)
     $("#posts").html(@view.render().el)
 

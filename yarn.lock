@@ -1525,6 +1525,13 @@ babel-plugin-polyfill-regenerator@^0.4.1:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.3"
 
+backbone@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/backbone/-/backbone-1.4.1.tgz#099a78184bc07b034048a8332229c2ccca1e3e62"
+  integrity sha512-ADy1ztN074YkWbHi8ojJVFe3vAanO/lrzMGZWUClIP7oDD/Pjy2vrASraUP+2EVCfIiTtCW4FChVow01XneivA==
+  dependencies:
+    underscore ">=1.8.3"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -6758,6 +6765,11 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
+
+underscore@>=1.8.3, underscore@^1.13.6:
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.6.tgz#04786a1f589dc6c09f761fc5f45b89e935136441"
+  integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
